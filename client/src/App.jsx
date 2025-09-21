@@ -4,7 +4,7 @@ import Orders from "./components/Orders";
 import Profiles from "./components/Profiles";
 import Products from "./components/Products"
 import FinanceAnalysis from "./components/FinanceAnalysis";
-import Navbar from "../layout/navbar";
+import Navbar from '../layout/Navbar'
 
 const App = () => {
   const mainContentStyle = {
@@ -15,10 +15,11 @@ const App = () => {
 
   return (
     <div>
-      <Navbar />
+      <Navbar/>
      
       <div style={mainContentStyle}>
         <Routes>
+          <Route path="/" element={<div>Home</div>} />
           <Route path="/FinanceAnalysis" element={<FinanceAnalysis />} />
           <Route path="/Orders" element={<Orders />} />
           <Route path="/Profiles" element={<Profiles />} />
