@@ -1,6 +1,5 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Sidebar from "../layout/sideBar";
 import Orders from "./components/Orders";
 import Profiles from "./components/Profiles";
 import Products from "./components/Products"
